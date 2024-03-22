@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master, develop ]
+    branches: [ master,  eca_trunk ]
   pull_request:
-    branches: [ master ]
+    branches: [ eca_trunk ]
 
 jobs:
   build:
