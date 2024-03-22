@@ -1,5 +1,5 @@
 function runScript(event) {
-  var foo = 'NOT_CONNECTED';
+  const foo = 'NOT_CONNECTED';
   if (foo === 'NOT_CONNECTED') {
   // 123 123
   }
