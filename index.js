@@ -4,6 +4,7 @@ function runScript(event) {
   if (foo === 'NOT_CONNECTED') {
   // 123 123
   }
+  var b
   // event.target.value = 'CONNECTED';
 }
 
