@@ -1,10 +1,10 @@
-name: CI
+name: Code quality check
 
 on:
   push:
-    branches: [ master,  eca_trunk ]
+    branches: [ master, eca_trunk ]
   pull_request:
-    branches: [ eca_trunk ]
+    branches: [ master, eca_trunk ]
 
 jobs:
   build:
