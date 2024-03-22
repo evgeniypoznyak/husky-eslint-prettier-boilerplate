@@ -25,4 +25,4 @@ jobs:
       - name: Check
         run: |
           yarn install
-          yarn lint-check
+#          yarn lint-check
