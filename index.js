@@ -1,7 +1,7 @@
 function runScript(event) {
-  var foo = 'NOT_CONNECTED';
+  var foo = 'NOT_CONNECTED'
   if (foo === 'NOT_CONNECTED') {
-  // 123
+  // 123 123
   }
   // event.target.value = 'CONNECTED';
 }
