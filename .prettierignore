@@ -1,0 +1,8 @@
+# Ignore artifacts:
+coverage
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+.eslintrc.json
+

@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Name of the file to check
+config_file="app-config.js"
+
+# Validate files
+validate_files() {
+    file="$1"
+    # Extract the filename without directory path
+    filename=$(basename "$file")
+    # Check if the filename matches the config file
+    if [ "$filename" = "$config_file" ]; then
+      echo "WARNING: You are committing changes to '$config_file'. Aborting commit."
+      exit 1
+    fi
+}
+
+# Get a list of staged files
+staged_files=$(git diff --cached --name-only --diff-filter=d)
+
+# Loop through each file and validate
+for file in $staged_files; do
+    validate_files "$file"
+done
+
+npx lint-staged

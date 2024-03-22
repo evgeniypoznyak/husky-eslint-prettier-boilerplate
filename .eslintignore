@@ -1,0 +1,7 @@
+.eslintrc.json
+.gitignore
+.prettierignore
+.prettierrc.js
+README.md
+.husky/
+.prettierrc
